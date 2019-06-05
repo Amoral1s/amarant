@@ -2,7 +2,7 @@ $(document).ready(function(){
   
   $(function () {
     $(document).on('mousemove', function (e) {
-        $('.header__wrap1').css({
+        $('.header__wrap').css({
             left: -e.pageX / 20 + 600,
             top: -e.pageY / 20 + 250
         });
