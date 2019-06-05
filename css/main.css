@@ -6,7 +6,7 @@
   font-style: normal; }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden!important;
   height: 5000px;
   font-family: "Conv_Alice-Regular", sans-serif;
   background-color: #250054;
