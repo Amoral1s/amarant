@@ -6,7 +6,7 @@
   font-style: normal; }
 
 body {
-  overflow-x: hidden!important;
+  overflow-x: hidden;
   height: 5000px;
   font-family: "Conv_Alice-Regular", sans-serif;
   background-color: #250054;
@@ -57,6 +57,9 @@ body {
   .button:focus {
     outline: none; }
 
+#mobile {
+  display: none; }
+
 .header {
   min-height: 800px;
   padding: 0;
@@ -98,10 +101,9 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
@@ -111,18 +113,19 @@ body {
     -webkit-flex-direction: column;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: absolute;
-    top: 30%;
-    left: 25%;
     z-index: 0;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .header__wrap h1 {
       font-size: 50px;
-      margin-bottom: 50px;
+      margin-bottom: 450px;
       margin-top: -150px; }
     .header__wrap img {
       height: 300px;
-      margin-bottom: 80px; }
+      margin-bottom: 80px;
+      position: absolute;
+      top: 0;
+      left: 35%; }
   .header-nav__tel {
     display: -webkit-box;
     display: -webkit-flex;
@@ -315,9 +318,6 @@ body {
   z-index: 9999; }
 
 @media (max-width: 1199px) {
-  .header__wrap {
-    position: relative;
-    top: 0; }
   .header-nav__menu {
     -webkit-justify-content: space-around;
         -ms-flex-pack: distribute;
@@ -326,6 +326,16 @@ body {
     display: none; } }
 
 @media (max-width: 996px) {
+  #mobile {
+    display: block; }
+  #logo {
+    display: none; }
+  .header__wrap img {
+    position: relative;
+    left: 0; }
+  .header__wrap h1 {
+    font-size: 40px;
+    margin-bottom: 50px; }
   .header__row {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -359,8 +369,6 @@ body {
             transform: translateX(0); } }
 
 @media (max-width: 578px) {
-  .header__wrap h1 {
-    font-size: 35px; }
   .mobile {
     width: 100%;
     left: 0; } }
