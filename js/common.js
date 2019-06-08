@@ -2,9 +2,9 @@ $(document).ready(function(){
 
 $(function () {
     $(document).on('mousemove', function (e) {
-        $('#logo').css({
-            left: -e.pageX / 30 + 350,
-            top: -e.pageY / 30 + -10
+        $('.header__bg__img').css({
+            left: -e.pageX / 10 + 1000,
+            top: -e.pageY / 10 + 350
         });
         
     });
