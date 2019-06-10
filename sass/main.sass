@@ -3,7 +3,6 @@
 html, body
   overflow-x: hidden!important
 body
-  height: 5000px
   font-family: $reg
   background-color: $dcolor
   padding: 0
@@ -62,7 +61,7 @@ body
     width: 100%
   &__bg
     background-image: url(../img/bg-head-1.jpg)
-    min-height: 900px
+    min-height: 800px
     padding: 0
     margin: 0
     position: relative
@@ -93,7 +92,7 @@ body
     background-color: rgba(0,0,0, 0.5)
     height: 900px
     width: 900px
-    margin-top: -430px
+    margin-top: -380px
     margin-left: -160px
     border-radius: 50%
     z-index: 1
@@ -107,6 +106,8 @@ body
       margin-top: 45%
       font-family: $bold
       margin-bottom: 20px
+      strong  
+        font-size: 65px
     h2
       font-size: 45px
       font-weight: 600
@@ -262,7 +263,58 @@ body
       z-index: 9999
  
 /* боди секция 1*/
-
-
+.title
+  text-align: center
+  position: relative
+  border-top: 3px solid #fff
+  border-bottom: 3px solid #fff
+  h2
+    font-size: 45px
+    margin: 15px auto
+    margin-top: 8px
+    font-family: $bold
+.assort
+  background-image: url(../img/layer1.png)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: 150% 0
+  &-row
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 80px
+    padding-bottom: 80px
+    margin: 0
+  &-in
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin: auto
+    &:nth-child(even)
+      justify-content: flex-end
+    img
+      border-radius: 50%
+      width: 400px
+      height: 400px
+      z-index: 10
+      box-shadow: 0 0 15px 5px rgba(0,0,0, 0.5)
+    &__text
+      font-size: 24px
+      padding: 30px
+      margin-left: 30px
+      position: relative
+      border-radius: 0 40% 40% 0
+      height: 250px
+      display: flex
+      align-items: center
+      &:nth-child(odd)
+        margin-right: 30px
+        margin-left: 0
+        border-radius: 40% 0 0 40%
+        padding-right: 90px
+      &:nth-child(even)
+        padding-left: 90px
+        
     
 @import "media"

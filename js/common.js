@@ -3,7 +3,7 @@ $(document).ready(function(){
 $(function () {
     $(document).on('mousemove', function (e) {
         $('.header__bg__img').css({
-            left: -e.pageX / 10 + 1000,
+            left: -e.pageX / 10 + 1100,
             top: -e.pageY / 10 + 350
         });
         
