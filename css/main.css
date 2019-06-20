@@ -108,14 +108,14 @@ body {
     -webkit-transform: scaleY(0);
         -ms-transform: scaleY(0);
             transform: scaleY(0);
-    -webkit-transition: 0.5s;
+    -webkit-transition: 0s;
     -o-transition: 0.5s;
     transition: 0.5s; }
   .table-open {
     -webkit-transform: scaleY(1);
         -ms-transform: scaleY(1);
             transform: scaleY(1);
-    -webkit-transition: 0.5s;
+    -webkit-transition: 0s;
     -o-transition: 0.5s;
     transition: 0.5s; }
 
