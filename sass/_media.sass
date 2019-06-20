@@ -17,6 +17,16 @@
   .assort
     background-position: 320% 0
 @media (max-width: 1199px)
+  .form
+    input
+      width: 250px
+  .features
+    &-wrap
+      ul
+        box-sizing: border-box
+        li
+          margin-left: 60px
+          padding-right: 70px
   .assort
     background-position: 800px 0
   .header
@@ -26,7 +36,48 @@
       &__tel
         display: none
     
-@media (max-width: 992px)
+@media (max-width: 993px)
+  .form
+    input
+      width: 200px
+      font-size: 18px
+  .about-title
+    h2
+      font-size: 30px
+  .features
+    padding: 0
+    margin: 0
+    &-wrap
+      height: 300px!important
+      ul
+        padding: 0
+        justify-content: flex-start
+        li
+          font-size: 15px
+          display: flex
+          flex-wrap: wrap
+          &:first-child
+            margin-top: 30px
+            margin-left: 0!important
+            padding: 20px 0 40px 0
+            margin-bottom: 10px
+            padding-right: 0!important
+            text-align: center
+            justify-content: center
+
+    &-yes
+      margin: 0
+      padding-right: 20px
+      li
+        margin-left: 55px!important
+        flex-wrap: wrap
+        font-size: 14px
+    &-no
+      margin: 0
+      li
+        margin-left: 55px!important
+        flex-wrap: wrap
+        font-size: 14px
   .assort
     background-image: none
     &-in
@@ -57,6 +108,36 @@
   .close
     display: block
 @media (max-width: 768px)
+  .form
+    &-in
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      h3
+        font-size: 22px
+        padding: 0 20px
+        margin: 0
+        margin-bottom: 20px
+      input
+        margin: 15px 0!important
+        width: 70%
+      button
+        width: 70%
+        font-size: 18px
+        padding: 20px 0
+  .about-title
+    padding-left: 40px
+    padding-right: 40px
+  .features
+    &-wrap
+      ul
+        li
+          margin: 20px auto
+    &-yes
+      li
+        &:first-child
+          height: 98px!important
   .assort
     background-image: none
     &-row
@@ -95,7 +176,33 @@
   .mobile
     right: 0
     transform: translateX(0)
+@media (max-width: 650px)
+  .assort-in
+    img
+      width: 250px
+      height: 250px
+      margin-bottom: 20px
+      margin-top: 20px
+    &__text
+      font-size: 14px
+      margin-bottom: 20px
+      strong 
+        font-size: 18px
+        line-height: 24px
+        margin: 30px auto
+      p
+        padding-left: 20px
+        padding-right: 20px
+@media (max-width: 600px)
+  .assort-in
+    img
+      height: 200px
+      width: 200px
 @media (max-width: 578px)
+  .table
+    td
+      font-size: 12px
+      font-weight: 400
   .about
     &__text
       p
@@ -107,8 +214,8 @@
     background-image: none
     &-in
       img
-        width: 250px
-        height: 250px
+        width: 200px
+        height: 200px
       &__text
         font-size: 16px
         margin-bottom: 20px
@@ -139,6 +246,24 @@
     top: 60%
       
 @media (max-width: 530px)
+  .features-wrap
+    min-height: 520px!important  
+  .assort
+    &-in
+      &__text
+        margin-right: 0!important
+        p
+          padding: 0 10px
+  .features
+    &-no, &-yes
+      li
+        font-size: 12px!important
+    &-yes
+      li
+        &:first-child
+          margin: 0!important
+          padding-top: 50px!important
+          padding-bottom: 54px!important
   .header
     &__wrapin
       margin-left: -170px
@@ -155,6 +280,16 @@
       img
         height: 100px
 @media (max-width: 480px)
+  .features
+    &-no, &-yes
+      li
+        font-size: 12px!important
+    &-yes
+      li
+        &:first-child
+          margin: 0!important
+          padding-top: 50px!important
+          padding-bottom: 68px!important
   .title
     h2
       font-size: 35px
@@ -165,15 +300,51 @@
       padding: 20px 0
     &-in
       img
-        width: 200px
-        height: 200px
+        width: 170px
+        height: 170px
       &__text
         font-size: 15px
 @media (max-width: 470px)
   .header
     &__wrapin
       margin-left: -200px
+@media (max-width: 440px)
+  .features-yes li:after, .features-no li:after
+    display: none
+  
+  .features-yes li
+    padding: 0
+    text-align: center!important
+    margin: 10px auto!important
+    width: 100%!important
+    padding: 10px!important
+  .features-no li
+    padding: 0
+    text-align: center!important
+    margin: 10px auto!important
+    width: 100%!important
+    padding: 10px!important
+  .features
+    &-yes
+      li
+        &:first-child
+          margin: 0!important
+          padding-top: 40px!important
+          padding-bottom: 8px!important
+    &-no
+      text-align: center!important
+      li
+        &:first-child
+          margin: 0!important
+          padding-top: 40px!important
+          padding-bottom: 28px!important
+  .features-wrap ul li:first-child
+    padding-right: 20px!important
+  .features-wrap
+    min-height: 520px!important  
 @media (max-width: 430px)
+  .features-wrap
+    min-height: 480px!important  
   .header
     &__wrapin
       margin-left: -220px
@@ -186,8 +357,8 @@
       padding: 0 10px
       height: 200px
       img
-        width: 170px
-        height: 170px
+        width: 140px
+        height: 140px
       &__text
         font-size: 13px
         margin-bottom: 0
@@ -199,6 +370,14 @@
     &__wrap
       h1
         font-size: 30px
+@media (max-width: 398px)
+  .features-wrap
+    min-height: 500px!important 
+  .features-yes
+    li
+      &:first-child
+        padding-bottom: 60px!important
+        padding-top: 50px!important
 @media (max-width: 390px)
   .header
     &__wrapin
@@ -210,6 +389,11 @@
       h2
         font-size: 22px
 @media (max-width: 380px)
+  .features-yes
+    li
+      &:first-child
+        padding-bottom: 66px!important
+        padding-top: 50px!important
   .header
     &__wrapin
       margin-left: -230px
@@ -220,8 +404,8 @@
       padding: 0 10px
       height: 160px
       img
-        width: 140px
-        height: 140px
+        width: 110px
+        height: 110px
       &__text
         font-size: 12px
         margin-bottom: 0
@@ -246,6 +430,10 @@
     &__wrapin
       margin-left: -250px
 @media (max-width: 330px)
+  .features-wrap
+    min-height: 520px!important 
+  .assort-in
+    margin: 10px auto
   .header
     &__wrapin
       margin-left: -260px

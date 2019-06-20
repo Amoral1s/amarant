@@ -30,4 +30,16 @@ $(".toggle, .close").click(function() {
         $(".close").removeClass('open-x');
        });
 
+
+    $(".assort-button").click(function() {
+    $(".table-wrap").addClass('table-open');
+    });
+
+    $(".table-close").click(function() {
+    $(".table-wrap").removeClass('table-open');
+    });
+
+    $("#phonenum").mask("+7(999)999-99-99");
+      
+    
 });
