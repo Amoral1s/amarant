@@ -29,6 +29,9 @@
           padding-right: 70px
   .assort
     background-position: 800px 0
+    &-button
+      width: 230px
+      font-size: 20px
   .header
     &-nav
       &__menu
@@ -186,13 +189,16 @@
     &__text
       font-size: 14px
       margin-bottom: 20px
+      margin-top: 20px
       strong 
         font-size: 18px
-        line-height: 24px
-        margin: 30px auto
+        &:last-child
+          line-height: 48px
       p
-        padding-left: 20px
-        padding-right: 20px
+        padding: 20px
+  .brevno
+    line-height: 20px!important    
+          
 @media (max-width: 600px)
   .assort-in
     img
@@ -212,6 +218,9 @@
         height: 60px
   .assort
     background-image: none
+    &-button
+      width: 200px
+      font-size: 17px
     &-in
       img
         width: 200px
@@ -232,7 +241,12 @@
     left: 0
     top: 20px
 @media (max-width: 550px)
-  .header
+  .assort
+    &-in
+      &__text
+        strong
+          &:last-child
+            font-size: 24px
     &__wrapin
       width: 800px
       margin-top: -440px
@@ -266,11 +280,11 @@
           padding-bottom: 54px!important
   .header
     &__wrapin
-      margin-left: -170px
+      margin-left: -210px
 @media (max-width: 504px)
   .header
     &__wrapin
-      margin-left: -180px
+      margin-left: -230px
       h1
         font-size: 35px
         strong
@@ -280,6 +294,10 @@
       img
         height: 100px
 @media (max-width: 480px)
+  .assort
+    &-button
+      width: 180px
+      font-size: 16px
   .features
     &-no, &-yes
       li
@@ -307,7 +325,7 @@
 @media (max-width: 470px)
   .header
     &__wrapin
-      margin-left: -200px
+      margin-left: -250px
 @media (max-width: 440px)
   .features-yes li:after, .features-no li:after
     display: none
@@ -347,7 +365,7 @@
     min-height: 480px!important  
   .header
     &__wrapin
-      margin-left: -220px
+      margin-left: -270px
       
 @media (max-width: 409px)
   .assort
@@ -365,7 +383,7 @@
 @media (max-width: 400px)
   .header
     &__wrapin
-      margin-left: -230px
+      margin-left: -290px
   .header
     &__wrap
       h1
@@ -381,7 +399,7 @@
 @media (max-width: 390px)
   .header
     &__wrapin
-      margin-left: -230px
+      margin-left: -280px
       h1
         font-size: 30px
         strong
@@ -389,6 +407,13 @@
       h2
         font-size: 22px
 @media (max-width: 380px)
+  .assort
+    &-in
+      margin: 20px auto!important
+      &__text
+        strong
+          &:last-child
+            font-size: 22px
   .features-yes
     li
       &:first-child
@@ -396,7 +421,7 @@
         padding-top: 50px!important
   .header
     &__wrapin
-      margin-left: -230px
+      margin-left: -280px
   .assort
     background-image: none
     &-in
@@ -412,7 +437,7 @@
 @media (max-width: 360px)
   .header
     &__wrapin
-      margin-left: -250px
+      margin-left: -290px
       
 
 @media (max-width: 350px)
@@ -424,23 +449,35 @@
         img
           height: 40px
     &__wrapin
-      margin-left: -245px
+      margin-left: -295px
 @media (max-width: 340px)
+  .assort
+    &-button
+      width: 150px
+      font-size: 14px
+      padding-right: 10px
+      padding-left: 10px
   .header
     &__wrapin
-      margin-left: -250px
+      margin-left: -300px
 @media (max-width: 330px)
+  .assort
+    &-in
+      &__text
+        strong
+          &:last-child
+            font-size: 16px
   .features-wrap
     min-height: 520px!important 
   .assort-in
     margin: 10px auto
   .header
     &__wrapin
-      margin-left: -260px
+      margin-left: -310px
 @media (max-width: 320px)
   .header
     &__wrapin
-      margin-left: -255px
+      margin-left: -310px
 
 
 

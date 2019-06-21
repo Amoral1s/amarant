@@ -28,8 +28,6 @@ body
   background-color: $dcolor
   color: #fff
   padding: 30px
-  width: 800px
-  height: 500px
   border-radius: 10px
   position: relative
   &-close
@@ -70,7 +68,6 @@ body
     justify-content: center
     align-items: center
     transform: scaleY(0)
-    transition: 0.5s
   &-open
     transform: scaleY(1)
     transition: 0.5s
@@ -330,7 +327,8 @@ body
   background-size: contain
   background-position: 150% 0
   &-button
-    padding: 20px 80px
+    padding: 20px 0
+    width: 300px
     font-size: 26px
     font-family: $bold
     border: none
@@ -338,7 +336,7 @@ body
     color: #fff
     border-radius: 3px
     box-shadow: 0px 0px 10px #fff
-    margin: 40px auto
+    margin: 15px auto
     &:hover
       cursor: pointer
       box-shadow: 0 0 20px #fff
@@ -379,7 +377,9 @@ body
         text-shadow: 1px 1px 2px black
         font-size: 28px
         font-family: $bold
+        margin: 10px auto
         &:last-child
+          margin-top: 15px
           color: red
           font-size: 32px
           text-shadow: 2px 2px 5px #000
